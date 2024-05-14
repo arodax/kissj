@@ -100,9 +100,6 @@ use Symfony\Bridge\Twig\Extension\TranslationExtension;
 use Symfony\Component\Translation\Loader\YamlFileLoader;
 use Symfony\Component\Translation\Translator;
 use Symfony\Contracts\Translation\TranslatorInterface;
-use Symfony\Component\Cache\Adapter\FilesystemAdapter;
-use Symfony\Component\Cache\Adapter\NullAdapter;
-use Symfony\Contracts\Cache\ItemInterface;
 use Twig\Extension\DebugExtension;
 
 use function DI\autowire;
