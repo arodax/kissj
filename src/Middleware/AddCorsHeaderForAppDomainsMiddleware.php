@@ -22,8 +22,8 @@ class AddCorsHeaderForAppDomainsMiddleware extends BaseMiddleware
             $response = $handler->handle($request);
         }
 
-        return $response->withHeader('Access-Control-Allow-Origin', 'kissj.skauting.cz')
-        ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
+        return $response->withHeader('Access-Control-Allow-Origin', 'https://kissj.skauting.cz')
+        ->withHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
         ->withHeader('Access-Control-Allow-Headers', $request->getHeader('Access-Control-Allow-Headers') == [] ? '' : $request->getHeader('Access-Control-Allow-Headers'))
         ->withHeader('Access-Control-Allow-Credentials', 'true'); // also handle cookies
     }
